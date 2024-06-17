@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body{
+    margin:0;
+    font-family: "Ubuntu", sans-serif;
+}
+/* layout */
+header{
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+    background-color: #f8f8f8;
+}
+.container{
+    width:90%;
+    display:flex;
+    max-width: 900px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+/* typograpghy */
+header h1{
+    font-family: "Lora", serif;
+    font-weight: 400;
+    color: #143774;
+    font-size: 2rem;
+    margin:0;
+}
+header p{
+    font-weight: 700;
+    color: #1792d2;
+    font-size: .75rem;
+    margin: 0;
+}
+
+/* navigation bar */
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding:0;
+}
+nav li{
+    margin-left: 2rem ;
+}
+nav a{
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+}
+nav a:hover,
+nav a:focus{
+    color: #1792d2;
+}
+
+@media (max-width: 675px) {
+    nav ul{
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+    }
+    nav li {
+        margin: .5rem 0;
+    }
+}
